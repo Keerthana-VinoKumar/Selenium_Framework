@@ -1,0 +1,17 @@
+<suite name="Enterprise Suite" parallel="false">
+  <listerners>
+  <listerners class-name="listerner.RetryListener"/>
+  <listerners class-name="listerner.TestListerner"/>
+  </listerners>
+  <test name="API Tests">
+    <classes>
+      <class name="api.tests.AuthApiTest"/>
+      <class name="api.tests.ProductApiTest"/>
+    </classes>
+  </test>
+  <test name="UI Tests">
+    <classes>
+      <class name="runner.CucumberRunner"/>
+    </classes>
+  </test>
+</suite>
